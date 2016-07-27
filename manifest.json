@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "ClayXtension",
+  "version": "1.1",
+  "icons": 
+			{ "128": "icon_128.png" },
+  "browser_action":
+					  {
+						"default_title": "Change Background"
+					  },
+  "permissions": 
+				  [ 
+					"tabs", "background" , "notifications" , "activeTab" , "webNavigation"
+				  ]
+  ,
+   "background": 
+				   {
+					 
+						"scripts": ["jquery.min.js","background.js"],
+						"persistent": false
+				  } 
+}
